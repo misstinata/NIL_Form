@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <style>
+    <script src="./jquery.js"></script>
+      
+    <link rel="stylesheet" href="main.css">
 
+    <script>
+        $("document").ready(function (){
+           $("#content").html("<li>mango<li>")
+            $("label").css("border","1px solid red")
+
+           var paragraph = $("<p>")
+
+            paragraph.append("<b>Hello</b>")
+
+            $("#content").html(paragraph)
+            console.log("Hello")
+        });
+    </script>
+
+   <style>
        .container{
         margin-top: 50px;
-           background-color: grey;
+           background-color: gainsboro;
            padding: 20px;
            width: 500px;
        }
@@ -32,7 +49,7 @@
 
        .btn-success{
            background-color: green;
-           color: ivory;
+           color: gainsboro;
            padding: 5px;
            border: 0px;
        }
@@ -54,7 +71,10 @@
 </head>
 <bod>
 
- 
+ <div id="content">
+
+ </div>
+
     <div class="bag">
         <div class="container">
             <form action="">
@@ -93,6 +113,6 @@
         </div>
     </div>
     
-
+    <
 </body>
 </html>
